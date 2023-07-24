@@ -111,7 +111,7 @@ async function main(): Promise<void> {
   } else {
     // (jobs_response.jobs.some(job => job.conclusion === 'failed')
     workflow_color = 'danger'
-    workflow_msg = 'SS-Failed:'
+    workflow_msg = 'Failed:'
   }
 
   if (include_jobs === 'false') {
@@ -132,7 +132,7 @@ async function main(): Promise<void> {
         break
       default:
         // case 'failure'
-        job_status_icon = '*ss✗*'
+        job_status_icon = '*✗*'
     }
 
     const job_duration = compute_duration({
