@@ -143,7 +143,7 @@ async function main(): Promise<void> {
     return {
       title: '', // FIXME: it's required in slack type, we should workaround that somehow
       short: true,
-      value: `${job_status_icon} <${job.html_url}|${job.name}> (${job_duration})`
+      value: `*${job_status_icon} <${job.html_url}|${job.name}> (${job_duration})*`
     }
   })
 
