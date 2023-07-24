@@ -124,7 +124,7 @@ async function main(): Promise<void> {
 
     switch (job.conclusion) {
       case 'success':
-        job_status_icon = '✓'
+        job_status_icon = '🟢'
         break
       case 'cancelled':
       case 'skipped':
@@ -132,7 +132,7 @@ async function main(): Promise<void> {
         break
       default:
         // case 'failure'
-        job_status_icon = '	❌'
+        job_status_icon = '🔴'
     }
 
     const job_duration = compute_duration({

@@ -12975,7 +12975,7 @@ function main() {
             let job_status_icon;
             switch (job.conclusion) {
                 case 'success':
-                    job_status_icon = '✓';
+                    job_status_icon = '🟢';
                     break;
                 case 'cancelled':
                 case 'skipped':
@@ -12983,7 +12983,7 @@ function main() {
                     break;
                 default:
                     // case 'failure'
-                    job_status_icon = '	❌';
+                    job_status_icon = '🔴';
             }
             const job_duration = compute_duration({
                 start: new Date(job.started_at),
