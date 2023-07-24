@@ -111,7 +111,7 @@ async function main(): Promise<void> {
   } else {
     // (jobs_response.jobs.some(job => job.conclusion === 'failed')
     workflow_color = 'danger'
-    workflow_msg = 'Failed:'
+    workflow_msg = 'SS-Failed:'
   }
 
   if (include_jobs === 'false') {
