@@ -12983,7 +12983,7 @@ function main() {
                     break;
                 default:
                     // case 'failure'
-                    job_status_icon = '*✗*';
+                    job_status_icon = '	❌';
             }
             const job_duration = compute_duration({
                 start: new Date(job.started_at),
@@ -12992,7 +12992,7 @@ function main() {
             return {
                 title: '',
                 short: true,
-                value: `*${job_status_icon} <${job.html_url}|${job.name}> (${job_duration})*`
+                value: `${job_status_icon} <${job.html_url}|${job.name}> (${job_duration})`
             };
         }));
         // Payload Formatting Shortcuts
